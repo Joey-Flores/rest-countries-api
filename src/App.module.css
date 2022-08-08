@@ -1,0 +1,43 @@
+:root {
+  --font-color: hsl(200, 15%, 8%);
+  --background-color: hsl(0, 0%, 98%);
+  --icon-color: #333;
+  --element-color: hsl(0, 0%, 100%);
+}
+/* 
+[data-theme="light"] {
+  --font-color: #333;
+  --background-color: #fff;
+  --icon-color: #333;
+} */
+
+[data-theme="dark"] {
+  --font-color: hsl(0, 0%, 100%);
+  --background-color: hsl(207, 26%, 17%);
+  --icon-color: hsl(0, 0%, 100%);
+  --element-color: hsl(209, 23%, 22%);
+}
+
+.app {
+  max-width: 100vw;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+button {
+  background-color: var(--element-color);
+}
+
+i {
+  color: var(--icon-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .searchAndFilter {
+    display: flex;
+  }
+
+  .app {
+    height: 100vh;
+  }
+}
